@@ -2,4 +2,38 @@ body {
   width: 100%;
   height: 100%;
   margin: 0;
+  text-align: center;
+}
+
+nav{
+  background:linear-gradient(90deg, #f00, #ff0, #0f0, #0ff, #00f, #f00, #ff0, #0f0, #0ff, #00f, #f00, #ff0, #0f0, #0ff, #00f, #f00, #ff0, #0f0, #0ff, #00f, #f00);
+  background-size: 400% 400%;
+  animation: gradient 3s linear infinite;
+}
+@keyframes gradient {
+  0%  {background-position: 0% 50%;}
+  100% {background-position: 100% 50%;}
+  /*100%{background-position: 0% 50%;}*/
+}
+nav a{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+figcaption{
+  font-size: small;
+}
+
+#featured-property p{ /*this feels totally wrong, but I can't*/
+  max-width: 800px;   /*another way?*/
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#details div{
+  float: left;
+  width: 25%;
+  background-color: red;
 }
